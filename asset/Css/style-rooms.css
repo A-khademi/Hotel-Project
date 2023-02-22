@@ -1,0 +1,970 @@
+*,
+*::after,
+*::before {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+/* Root */
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+}
+
+@font-face {
+  font-family: "logo";
+  src: url("../Fonts/Baskervville-Regular.ttf");
+}
+
+/* Header */
+
+.main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/h1_hero.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+header {
+  width: 100%;
+  height: auto;
+}
+
+.top {
+  background-color: #2e0000;
+  width: 100%;
+  color: var(--bs-white);
+  padding: 10px;
+}
+
+.top ul {
+  list-style: none;
+}
+
+.top ul li {
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  float: left;
+  text-transform: capitalize;
+}
+
+.top > ul .right > span {
+  border-right: 1px solid #ffffff;
+  padding-right: 10px;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.icon i {
+  color: var(--bs-white);
+  font-size: 20px;
+  padding: 10px 15px;
+}
+
+.icon i:hover {
+  color: var(--bs-white);
+  transform: rotatey(180deg);
+  transition: 0.5s;
+}
+
+.container {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+.bottom {
+  background-color: transparent;
+  display: grid;
+  grid-template-columns: 500px 5fr 150px;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--bs-white);
+  color: var(--bs-white);
+}
+
+.bottom .logo {
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  padding-left: 30px;
+}
+.bottom ul {
+  list-style: none;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+
+.bottom ul li {
+  display: inline-block;
+  margin: 35px 5px;
+}
+
+.bottom > nav > ul > li > a {
+  padding: 33px 5px;
+  text-decoration: none;
+  color: var(--bs-white);
+}
+
+.book {
+  width: 100%;
+  height: 100%;
+  background-color: #e29c89;
+  justify-content: space-around;
+  align-content: space-around;
+  display: block;
+}
+.book a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--bs-white);
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+nav > ul > li > a:hover {
+  border-bottom: 5px solid var(--bs-white);
+  transition: all 0.3s ease-out 0s;
+}
+
+.blog {
+  position: relative;
+}
+
+.bottom-list {
+  position: absolute;
+  width: 140px;
+  background: #e29c89;
+  top: 55px;
+  opacity: 0;
+  padding: 15px 0;
+}
+
+.bottom-list li {
+  display: block;
+  margin: 10px !important;
+}
+
+.bottom-list li > a {
+  line-height: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 5px !important;
+  font-size: 16px;
+  color: var(--bs-white);
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.blog:hover .bottom-list {
+  opacity: 100;
+}
+
+.bottom-list li:hover a {
+  margin-left: 3px !important;
+  transition: all 0.3s ease-out 0s;
+}
+
+.slogan {
+  color: var(--bs-white);
+  font-size: 45px;
+  text-align: center;
+  line-height: 1.5;
+  font-family: "logo", serif;
+  justify-content: space-around;
+  padding-top: 5%;
+  font-weight: bolder;
+  font-weight: 800;
+}
+
+.container-check {
+  width: 80%;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 50px;
+  margin: 0 50px;
+}
+
+.container-check label {
+  text-transform: capitalize;
+  color: var(--bs-white);
+  display: block;
+  padding: 5px;
+}
+
+.check-in,
+.check-out {
+  width: 40%;
+  border-bottom: 1px solid var(--bs-light);
+}
+
+.check-in i,
+.check-out i {
+  color: var(--bs-white);
+  font-size: 20px;
+  margin-right: 50px;
+}
+
+.check-in a,
+.check-out a {
+  text-decoration: none;
+  color: var(--bs-white);
+  font-size: 20px;
+}
+
+.container-check-box {
+  position: relative;
+}
+
+.check-box {
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: flex-end;
+  position: absolute;
+  top: 130px;
+}
+
+#Calendar {
+  margin-left: 15px;
+  padding: 5px 20px;
+  border: 0;
+  margin-bottom: 5px;
+  background-color: #f9f8f8c2;
+}
+
+.adult {
+  position: relative;
+}
+
+.adult-list {
+  list-style: none;
+  width: 250px;
+  background-color: var(--bs-white);
+  position: absolute;
+  bottom: -170px;
+  left: -2px;
+  border: 2px solid #fff;
+  opacity: 0;
+  z-index: 1;
+}
+
+.adult-list a {
+  line-height: 2;
+  padding: 5px;
+  padding-left: 20px;
+  color: var(--bs-dark);
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+}
+
+.adult:hover .adult-list {
+  opacity: 1;
+}
+
+.adult-list > li:hover a {
+  background-color: #6c757d2c;
+}
+
+.adult,
+.children {
+  color: var(--bs-white);
+  width: 250px;
+  height: 50px;
+  border: 3px solid var(--bs-white);
+  margin: 10px;
+  font-family: sans-serif;
+  padding: 15px;
+}
+
+.adult i {
+  padding-left: 70%;
+}
+
+.adult i:hover {
+  transform: rotateX(180deg);
+  transition: 0.3s;
+}
+
+.children i {
+  padding-left: 60%;
+}
+
+.children i:hover {
+  transform: rotateX(180deg);
+  transition: 0.3s;
+}
+
+.children {
+  position: relative;
+}
+
+.children-list {
+  list-style: none;
+  width: 250px;
+  background-color: var(--bs-white);
+  position: absolute;
+  bottom: -170px;
+  left: -2px;
+  border: 2px solid #fff;
+  opacity: 0;
+  z-index: 1;
+}
+
+.children-list a {
+  line-height: 2;
+  padding: 5px;
+  padding-left: 20px;
+  color: var(--bs-dark);
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+}
+
+.children:hover .children-list {
+  opacity: 1;
+}
+
+.children-list > li:hover a {
+  background-color: #6c757d2c;
+}
+
+.search {
+  background-color: var(--bs-white);
+  color: var(--bs-dark);
+  width: 250px;
+  height: 50px;
+  border: 3px solid var(--bs-white);
+  margin: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 15px;
+}
+
+.luxury {
+  width: 100%;
+  height: 600px;
+}
+
+.luxury > .container {
+  padding: 100px 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.container > .box-left {
+  background-image: url("../images/about.jpg");
+  background-size: cover;
+  width: 40%;
+  height: 100%;
+}
+
+.container > .box-right {
+  width: 40%;
+  height: 100%;
+  padding: 20px 10px;
+  text-align: justify;
+}
+.container > .box-right > h2 {
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.container > .box-right > p {
+  margin: 20px 30px 50px 10px;
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+.container > .box-right > span {
+  text-transform: capitalize;
+  font-size: 16px;
+  border: 1px solid #e29c89;
+  color: #e29c89;
+  padding: 20px 60px;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.container > .box-right > span:hover {
+  background-color: #e29c89;
+  color: var(--bs-white);
+}
+
+.container > .img {
+  background-image: url("../images/about-right.jpg.webp");
+  background-size: cover;
+  width: 20%;
+  height: 120%;
+}
+
+.rooms > .container {
+  width: 100%;
+  height: auto;
+  background-color: #f9f8f8;
+  margin-top: 100px;
+}
+
+.rooms h2 {
+  margin-top: 80px;
+  margin-left: 100px;
+  font-size: 50px;
+}
+
+.rooms p {
+  margin-top: 20px;
+  margin-left: 100px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+/* .arrow{
+    position: relative;
+    display: inline-block;
+}
+.right-arrow a{
+    color: #20c997;
+} */
+
+.container-pictures {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  justify-content: space-evenly;
+  color: var(--bs-white);
+  flex-wrap: wrap;
+}
+
+.container-pictures h3 > a {
+  text-decoration: none;
+  color: var(--bs-white);
+  font-size: 30px;
+  font-family: serif;
+}
+
+.container-pictures h3 > a:hover {
+  color: #e29c89;
+}
+
+.container-pictures p {
+  margin: 0;
+  color: #f9f8f8b0;
+}
+
+.container-pictures p,
+span {
+  font-family: sans-serif;
+  color: #f9f8f8b9;
+}
+
+.first,
+.Second,
+.Third,
+.fourth,
+.the-fiveth,
+.the-sixth,
+.the-seventh,
+.eighth,
+.ninth {
+  background-image: url("../images/hotel3.jpg.webp");
+  background-size: cover;
+  width: 28%;
+  height: 100%;
+  padding-top: 8%;
+  padding-left: 30px;
+  line-height: 2.5;
+  margin: 20px;
+}
+
+.Second {
+  background-image: url("../images/hotel2.jpg.webp");
+}
+
+.Third {
+  background-image: url("../images/hotel1.jpg.webp");
+}
+
+.fourth {
+  background-image: url("../images/hotel4.jpg");
+}
+
+.the-fiveth {
+  background-image: url("../images/hotel5.jpg");
+}
+
+.the-sixth {
+  background-image: url("../images/hotel6.jpg");
+}
+
+.the-seventh {
+  background-image: url("../images/hotel7.jpg");
+}
+
+.eighth {
+  background-image: url("../images/hotel8.jpg");
+}
+
+.ninth {
+  background-image: url("../images/hotel9.jpg");
+}
+
+.find-room {
+  width: 100%;
+  height: auto;
+  background-color: #f9f8f8;
+  justify-content: space-evenly;
+}
+
+.find-room > h2 {
+  width: 70%;
+  height: auto;
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  line-height: 1.3;
+  display: block;
+  margin-top: 10%;
+  text-align: center;
+  margin-left: 0;
+}
+
+.find-room > h2 > a {
+  font-size: 20px;
+  text-align: center;
+  color: var(--bs-dark);
+  text-decoration: dotted underline;
+  font-size: 25px;
+  text-transform: capitalize;
+}
+
+.find-room > h2 > a:hover {
+  font-size: 30px;
+}
+
+.services {
+  width: 100%;
+  height: 400px;
+  background-color: #f9f8f8;
+  justify-content: center;
+}
+
+.services > img,
+.services > .right-box {
+  margin-top: 10%;
+}
+
+.services > img {
+  width: 40%;
+  height: 520px;
+}
+
+.services > .right-box {
+  width: 40%;
+  height: 520px;
+  background-color: #191514;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  padding: 5%;
+}
+
+.services > .right-box > h3 > a {
+  color: var(--bs-white);
+  text-decoration: none;
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+  display: block;
+  font-family: "Baskervville", serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.services > .right-box > p {
+  color: var(--bs-white);
+  margin-left: 0%;
+  line-height: 1.5;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  padding-bottom: 10px;
+}
+
+.services > .right-box > a {
+  text-transform: capitalize;
+  font-size: 16px;
+  border: 1px solid #e29c89;
+  color: #e29c89;
+  text-decoration: none;
+  padding: 20px 60px;
+}
+
+.services > .right-box > a:hover {
+  background-color: #e29c89;
+  color: var(--bs-white);
+}
+
+.movie {
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  margin-top: 10%;
+}
+
+.video {
+  width: 90%;
+  height: 400px;
+  background-image: url("../images/video-bg.jpg");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-icon {
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  border: 50px solid #19151400;
+  border-radius: 50%;
+  line-height: 50%;
+  background-color: #19151450;
+}
+
+.offer > .container {
+  width: 100%;
+  height: 600px;
+  margin-top: 10%;
+}
+
+.offer h2 {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-family: "Baskervville", serif;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.container-free {
+  position: relative;
+}
+
+.free {
+  width: 100%;
+  height: 350px;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.free-1,
+.free-2,
+.free-3 {
+  width: 30%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/guest1.jpg");
+  background-size: cover;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+.free-1 > h3,
+.free-2 > h3,
+.free-3 > h3 {
+  display: none;
+  position: absolute;
+  bottom: 60%;
+  color: var(--bs-white);
+  font-size: 35px;
+}
+
+.free-1::after {
+  content: " Free Drinks";
+  font-size: 35px;
+  color: var(--bs-white);
+  font-weight: 500;
+}
+
+.free-1:hover h3,
+.free-2:hover h3,
+.free-3:hover h3 {
+  display: block;
+}
+
+.free-1:hover h3:hover,
+.free-2:hover h3:hover,
+.free-3:hover h3:hover {
+  color: #e2856b;
+}
+
+.free-1:hover::after,
+.free-2:hover::after,
+.free-3:hover::after {
+  content: "The concept and service of the best luxury hotels in Asturias in our sophisticated Urban Double and Unique Junior Suite rooms, with the possibility of enjoying a furnished terrace in our Double Urban Loft and Unique Junior Loft Suite.";
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+  color: #f9f8f8c5;
+  line-height: 1.5;
+  font-family: "Jost", sans-serif;
+}
+
+.free-2 {
+  background-image: url("../images/guest2.jpg");
+}
+
+.free-2::after {
+  content: " Free Breakfast";
+  font-size: 35px;
+  color: var(--bs-white);
+  font-weight: 500;
+}
+
+.free-3 {
+  background-image: url("../images/guest3.jpg");
+}
+
+.free-3::after {
+  content: " Free Dinner";
+  font-weight: 500;
+  font-size: 35px;
+  color: var(--bs-white);
+}
+
+.description > .container {
+  width: 100%;
+  height: auto;
+  background-color: #b65e45;
+  font-family: "Jost", sans-serif;
+}
+
+.description .left-description,
+.right-description {
+  display: block;
+  width: 40%;
+  height: 100%;
+  margin: 5%;
+  line-height: 1.5;
+}
+
+.description .left-description > h3,
+.right-description > h3 {
+  font-weight: 600;
+  font-size: 30px;
+  padding-bottom: 5%;
+  color: var(--bs-white);
+}
+
+.description .left-description > p,
+.right-description > p {
+  font-size: 25px;
+  padding-bottom: 5%;
+  color: #ffffffc4;
+}
+
+.description .left-description > span,
+.right-description > span {
+  font-size: 25px;
+}
+
+footer > .container {
+  width: 100%;
+  height: 500px;
+  background-color: #191514;
+  padding: 10%;
+  flex-direction: column;
+  align-items: stretch;
+  justify-items: center;
+  font-family: "Jost", serif;
+  line-height: 1.5;
+}
+
+.rolax {
+  width: 25%;
+  height: auto;
+  padding: 10px;
+  padding-left: 10px;
+}
+
+.rolax > p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 17px;
+  color: #f9f8f8;
+  font-family: "Jost", sans-serif;
+}
+
+.rolax > a > i {
+  font-size: 17px;
+  color: #343a40;
+  padding: 10px;
+}
+
+.rolax > a > i:hover {
+  color: #e29c89;
+  transform: translateY(-2px);
+}
+
+.navigation {
+  width: 25%;
+  height: auto;
+  padding: 10px;
+  line-height: 1.5;
+  padding-left: 20px;
+}
+
+.navigation > h4 {
+  color: #f9f8f8;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+
+.navigation > ul > li {
+  list-style: none;
+  line-height: 2;
+}
+
+.navigation > ul > li > a {
+  text-decoration: none;
+  color: var(--bs-white);
+}
+
+.contact {
+  width: 25%;
+  height: auto;
+}
+
+.contact > h4 {
+  color: #f9f8f8;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+
+.contact > ul > li {
+  list-style: none;
+  line-height: 2;
+}
+
+.contact .number {
+  color: #e29c89;
+}
+
+.contact > ul > li > a {
+  text-decoration: none;
+  color: var(--bs-white);
+}
+
+.navigation > ul > li > a:hover {
+  text-decoration: underline;
+  margin-left: 2px;
+  transition: 0.5s;
+}
+
+.contact > ul > li > a:hover {
+  text-decoration: underline;
+  margin-left: 2px;
+  transition: 0.5s;
+}
+
+.newsletter {
+  width: 25%;
+  height: auto;
+}
+
+.newsletter > h4 {
+  color: #f9f8f8;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+
+.newsletter > p {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 17px;
+  font-weight: 300;
+  color: #f9f8f8;
+  font-family: "Jost", sans-serif;
+}
+
+#email {
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.719);
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.842);
+  text-decoration: none;
+  padding: 10px 35px;
+  margin-bottom: 5%;
+}
+
+.newsletter-box > a {
+  text-transform: capitalize;
+  font-size: 16px;
+  border: 1px solid #e29c89;
+  color: var(--bs-white);
+  text-decoration: none;
+  padding: 10px 55px;
+  background-color: #e29c89;
+  display: block;
+  text-align: center;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 5%;
+  color: var(--bs-white);
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+}
+
+.footer-bottom i,
+a {
+  color: #e29c89;
+  text-decoration: none;
+}
